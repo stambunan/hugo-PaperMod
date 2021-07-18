@@ -23,3 +23,9 @@
 
 - id: code_copied
   translation: "copied!"
+
+- id: newer_post
+  translation: "Newer post"
+
+- id: older_post
+  translation: "Older post"
