@@ -28,7 +28,10 @@
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ replace .Content "<!--in-article-ad-->" (partial "google/in_article_ad.html" .) | safeHTML }}{{ end }}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  <div>
+    {{- partial "google/in_article_ad.html"}}
   </div>
   <footer class="post-footer">
     {{- if .Params.tags }}
